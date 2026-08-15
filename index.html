@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LIFEOS AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="logo">LIFEOS <span>AI</span></div>
+
+    <button class="profile-btn">👤</button>
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+      <p class="welcome">WELCOME TO LIFEOS</p>
+
+      <h1>Your AI-powered<br>
+        <span>life assistant.</span>
+      </h1>
+
+      <p class="hero-text">
+        Earn more, learn faster, solve problems and discover
+        opportunities with AI.
+      </p>
+
+      <button class="start-btn" onclick="openAssistant()">
+        🤖 Talk to LIFEOS AI
+      </button>
+    </section>
+
+
+    <section class="quick-actions">
+
+      <h2>What do you want to do?</h2>
+
+      <div class="action-grid">
+
+        <button class="action-card" onclick="openEarn()">
+          <div class="icon">💰</div>
+          <h3>Earn</h3>
+          <p>Find ways to increase your income.</p>
+        </button>
+
+        <button class="action-card" onclick="openLearn()">
+          <div class="icon">📚</div>
+          <h3>Learn</h3>
+          <p>Discover skills that can change your future.</p>
+        </button>
+
+        <button class="action-card" onclick="openSolve()">
+          <div class="icon">🛠️</div>
+          <h3>Solve</h3>
+          <p>Get practical solutions to your problems.</p>
+        </button>
+
+        <button class="action-card" onclick="openOpportunities()">
+          <div class="icon">🚀</div>
+          <h3>Opportunities</h3>
+          <p>Discover jobs, business and other opportunities.</p>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="ai-section" id="assistant">
+
+      <div class="ai-header">
+        <div class="ai-avatar">🤖</div>
+
+        <div>
+          <h2>LIFEOS AI</h2>
+          <p>Your personal AI assistant</p>
+        </div>
+      </div>
+
+      <div class="chat-box" id="chatBox">
+
+        <div class="ai-message">
+          Hi 👋 I'm LIFEOS AI. What would you like to achieve today?
+        </div>
+
+      </div>
+
+      <div class="input-area">
+
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Tell me what you need help with..."
+        >
+
+        <button onclick="sendMessage()">➤</button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <nav class="bottom-nav">
+
+    <button onclick="goHome()">
+      🏠
+      <span>Home</span>
+    </button>
+
+    <button onclick="openEarn()">
+      💰
+      <span>Earn</span>
+    </button>
+
+    <button onclick="openAssistant()">
+      🤖
+      <span>AI</span>
+    </button>
+
+    <button onclick="openLearn()">
+      📚
+      <span>Learn</span>
+    </button>
+
+    <button onclick="openProfile()">
+      👤
+      <span>Profile</span>
+    </button>
+
+  </nav>
+
+
+  <script src="app.js"></script>
+
+</body>
+      </html>
